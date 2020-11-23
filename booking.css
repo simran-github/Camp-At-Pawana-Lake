@@ -1,0 +1,89 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+.top{
+  background-color:#5D4954;
+
+  text-align:center;
+  line-height:85px
+  height: 85px;
+  width: 100%;
+  font-size: 45px;
+    color:#e4e3e3;
+}
+
+.gap{
+  height:10px;
+  width: 100%;
+}
+
+.bookingintro{
+
+  background-image: url(images/bookingpage.jpg);
+  text-align:center;
+  line-height:85px
+  height: 85px;
+  width: 100%;
+  font-size: 45px;
+    color:#f5f1da;
+}
+
+.bookholidayheading{
+  height 100vh;
+  width:100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.bookingcontainer {
+    width: 100%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bookingpara{
+  margin-top: 30px;
+    font-family: 'EB Garamond', serif;
+    left: 34%;
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 400;
+    height: 600px;
+    margin-left: -50px;
+    margin-right: -50px;
+    width: 45%;
+}
+
+.bookingpara{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.bookingparadiv{
+  height: auto;
+  width: 100%;
+  display: block;
+  margin-top: 800px;
+}
+
+.icon-bar {
+    position: fixed;
+    bottom: 0%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.whatsappicons{
+  height: 50px;
+  width: 50px;
+}

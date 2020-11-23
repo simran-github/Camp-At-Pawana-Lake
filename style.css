@@ -1,0 +1,1961 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* *****************************IMAGE SLIDER STYLES ********************************************************************** */
+ #ImageSlider{
+   background-color:  #201818;
+ }
+
+ .slideshow{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   overflow:hidden;
+ }
+
+ .slideshow-item{
+   width: inherit;
+   height: inherit;
+   position: absolute;
+   opacity:0;
+   animation: cycleImages 31s infinite;
+ }
+
+
+.slideshow-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoom 31s infinite;
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img{
+  animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img{
+  animation-delay: 10s;
+}
+
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img{
+  animation-delay: 20s;
+}
+
+
+
+
+.slideshow-item-text{
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 10rem 5rem;
+}
+
+.slideshow-item-text h5{
+  font-size: 5rem;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2.5rem;
+}
+
+.slideshow-item-text p{
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+@keyframes cycleImages {
+
+  25%{
+     opacity: 1;
+  }
+  40%{
+     opacity: 0;
+  }
+
+}
+
+@keyframes zoom {
+  100%{
+    transform: scale(1.3);
+  }
+}
+
+/* *****************************IMAGE SLIDER STYLES END**********************************************************************  */
+
+/*****************************COVID SAFETY PRECAUTIONS ********************************************************************** */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+.precautionsgap {
+  width: 100%;
+  background:#201818;
+  height:10px;
+  color: #201818;
+  display: inline;
+}
+
+.precautionsgap h1{
+  color:  #201818;
+}
+
+.precautionscontainer{
+  max-width: 1140px;
+  margin: auto;
+  position: relative;
+  min-height: 1px;
+}
+
+.precautions{
+  min-height: 100vh;
+  padding: 60px 15px;
+  background-color: #201818;
+  float: left;
+  width: 100%;
+}
+
+
+.precautions .card{
+  width:25%;
+  float: left;
+  padding: 0px 15px;
+}
+
+.precautions .card .box{
+  padding: 15px;
+  /*background-color: #2d3035;*/
+  background-color: #151515;
+  border-radius: 5px;
+  transition: margin 1s ease,box-shadow 1s ease;
+}
+
+.precautions .card .box:hover{
+  margin-top: -15px;
+  box-shadow: 0px 0px 40px black;
+}
+
+.precautions .card .box img{
+  width: 150px;
+  display: block;
+  margin:10px auto;
+  border-radius: 50%;
+}
+
+.precautions .card .box h4{
+  font-size: 20px;
+  font-family: open sans;
+  margin: 20px 0px 10px;
+/*  color: #ea5e71;*/
+  color: #f12020;
+  text-align: center;
+  font-weight: 700;
+}
+
+.precautions .card .box h5{
+  font-size: 16px;
+  font-family: open sans;
+  font-weight: 600;
+  color: #b9b9b9;
+  margin: 0px 0px 15px;
+  text-align: center;
+}
+
+.precautions .card .box p{
+  color: #b9b9b9;
+  font-size: 15px;
+  font-family: open sans;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+
+/* *****************************COVID SAFETY PRECAUTIONS END********************************************************************** */
+
+eachimage:hover{
+  opacity: 0.9px;
+}
+
+.emptyspace{
+  height: 8vh;
+}
+
+.icon-bar {
+    position: fixed;
+    bottom: 0%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.whatsappicons{
+  height: 50px;
+  width: 50px;
+}
+
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.introduction{
+
+  font-family: 'EB Garamond', serif;
+  color: #000;
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 2px;
+  font-size: 23px;
+  margin: 0px;
+  text-align:left;
+  display:table-cell;
+  vertical-align: middle;
+
+}
+
+.alternateintro{
+  display: none;
+}
+
+.i{
+  display: inline;
+  color: white;
+}
+
+.i1{
+  display: inline;
+  color: #a20a0a;
+  font-size: 27px;
+  font-family: 'Itim', cursive;
+}
+
+.i2{
+  font-family: 'Noto Serif', serif;
+  font-size: 25px;
+  color: #f6eec9;
+}
+
+.introductiondiv{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.introductiondiv img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 25%;
+  height: auto;
+}
+
+.emailspan{
+  float: right;
+  text-align: left;
+  font-size: 17px;
+  color: #e4e3e3;
+}
+
+.phonenospan{
+  text-align: right;
+  font-size: 17px;
+  color: #e4e3e3;
+
+}
+
+/******************NAVBAR CSS**************************************************/
+
+nav{
+  font-family: 'Arial' ,sans-serif;
+  background: #201818;
+  color: #F7F0F0;
+  display: flex;
+  justify-content: center;
+  opacity:1.5;
+  position: fixed;
+  z-index: 998;
+  font-family: 'Playfair Display SC', serif;
+  height: 9vh;
+  width:100%  !important;
+}
+
+.mainlogo{
+  height: 60px;
+  width:85px
+}
+
+nav .mainMenu{
+  height:100vh;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+
+  z-index:10;
+  flex-direction:column    !important;
+  justify-content:center;
+  align-items:center;
+  background:#201818;
+  transition:top 1s ease;
+  display:none;
+
+}
+
+nav .mainMenu li a{
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F7F0F0;
+  font-size: 1.2rem;
+}
+
+nav .mainMenu li a:hover{
+  background: none;
+  color:rgb(255,123,0);
+  font-size: 1.6rem;
+}
+
+
+nav .openMenu{
+  font-size: 2rem;
+  margin: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+
+nav .mainMenu .closeMenu{
+  display: block;
+  position: absolute;
+  top:20px;
+  right:20px;
+
+}
+
+.icons i{
+  display: inline-block;
+  padding: 12px;
+}
+
+nav .mainMenu .closeMenu, .icons i{
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.fa-facebook:hover{color: rgb(0,110,255);}
+.fa-whatsapp:hover{color: rgb(37,211,102);}
+.fa-instagram:hover{color: rgb(255,0,191);}
+.fa-phone:hover{color: rgb(255,123,0);}
+
+nav .logo h1{
+  padding: 25px;
+  margin: 6px;
+  font-size: 28px;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+
+
+/******************NAVBAR CSS**************************************************/
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.dividerheading{
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 5px;
+  color: #F7F0F0;
+
+}
+
+.box1{
+
+  height: 100vh;
+  width: 100%   !important;
+  background-image: url(images/home4.png);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  background-attachment: fixed;
+}
+
+.box2{
+
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/transparent.png);
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+}
+
+.intro{
+  padding: 150px;
+}
+
+
+
+.box3{
+
+  height: 100vh;
+  width: 100%;
+ background-image: url(images/white.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+
+}
+
+
+
+
+.divider{
+
+
+  width: 100%;
+  background-color:#201818;
+
+
+}
+
+.icon{
+  height: 50px;
+  width: 80px;
+}
+
+.Profile{
+
+    display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 35%;
+}
+
+.buttonContainer {
+  height: 200px;
+  position: relative;
+
+}
+
+.booknow {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 44%;
+
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color:  #321f28;
+  padding: 16px 32px;
+  text-align: center;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button1 {
+  background-color:   #321f28;
+  color: #FFFFFF;
+  border: 2px solid #321f28 ;
+  border-radius: 25%;
+}
+
+.button1:hover {
+  border: 2px solid white ;
+  background-color: #4CAF50;
+  color:  white;
+}
+
+
+h1{
+  font-family: serif;
+  font-size: 65px;
+  color: #fff;
+  margin: 0px;
+  text-align: center;
+  display:table-cell;
+  vertical-align: middle;
+
+}
+
+
+h4{
+  height: 10vh;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+
+
+  vertical-align: middle;
+}
+
+@keyframes navLinkFade{
+
+  from{
+    opacity: 0px;
+    transform: translateX(50px);
+  }
+  to{
+     opacity: 1px;
+     transform: translateX(0px);
+
+
+  }
+
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  opacity: 0px;
+}
+
+.toggle .line3{
+  transform: rotate(+45deg) translate(-5px,-6px);
+}
+
+/**********************GALLERY STYLES*****************************************************************************/
+
+.top{
+  background-color:#201818;
+
+  text-align:center;
+  line-height:85px
+  height: 85px;
+  width: 100%;
+  font-size: 45px;
+    color:#F7F0F0;
+}
+
+
+
+.gap{
+  height:5px;
+  width: 100%;
+}
+
+
+
+.imagesdiv{
+
+  /*background-image: url(images/galleryblur.jpg);*/
+  background-color: #201818;
+
+}
+
+
+
+.eachimage{
+  display: inline-block;
+  height: 450px;
+  width: 450px;
+  margin: 25px;
+  border-radius: 20%;
+
+}
+
+/**********************LOCATION STYLES*****************************************************************************/
+
+.mapouter{
+
+  border: 2px black;
+
+  position:absolute;
+  text-align:left;
+  height:800px;
+  width:100%;}
+
+.gmap_canvas {
+    border: 2px black;
+  overflow:hidden;
+  background:none!important;
+  height:800px;
+  width:100;
+
+}
+
+/**********************FOOTER STYLES*****************************************************************************/
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ footer{
+   font-family: 'Poppins', sans-serif;
+
+   bottom: 0px;
+   width: 100%;
+   background: #201818;
+   color: #e4e3e3;
+ }
+
+ .main-content{
+   display: flex;
+ }
+
+ .main-content .box{
+   flex-basis: 50%;
+   padding: 10px 20px;
+ }
+
+ .box h2{
+   font-size: 1.125rem;
+   font-weight: 600;
+   text-transform: uppercase;
+ }
+
+ .box .footercontent{
+   margin: 20px 0 0 0;
+   position: relative;
+ }
+
+ .box .footercontent::before{
+   position: absolute;
+   content: '';
+   top: -10px;
+   height: 2px;
+   width: 100%;
+   background: #1a1a1a;
+ }
+
+ .box .footercontent::after{
+   position: absolute;
+   content: '';
+   height: 2px;
+   width: 15%;
+   background:#f12020;
+   top:-10px;
+ }
+
+ .left .footercontent p{
+   text-align: justify;
+ }
+
+ .left .footercontent .social{
+   margin: 20px 0 0 0;
+ }
+
+ .left .footercontent .social a{
+   padding: 0 2px;
+ }
+
+ .left .footercontent .social a span{
+   height: 40px;
+   width: 40px;
+   background: #1a1a1a;
+   line-height: 40px;
+   text-align: center;
+   font-size: 18px;
+   border-radius: 5px;
+   transition: 0.3s;
+ }
+
+.left .footercontent .social a span:hover{
+  background: #f12020;
+}
+
+.center .footercontent .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center .footercontent .fas:hover{
+  background: #f12020;
+}
+
+.center .footercontent .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.center .footercontent .phone{
+  margin: 10px 0;
+}
+
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+
+.right form .msg{
+  margin-top: 10px;
+}
+
+.right form input,.right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+
+.right form input{
+  height: 35px;
+}
+
+.right form .btn{
+  margin-top: 10px;
+}
+
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.right form .btn button:hover{
+  background: #201818;
+}
+
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+
+.bottom center span{
+  color:#656565;
+}
+
+.bottom center a{
+  color:#f12020;
+  text-decoration: none;
+}
+
+.bottom center a:hover{
+  text-decoration: underline;
+}
+
+/*********************** MEDIA QUERIES ***********************************************************************/
+
+@media screen and (max-width:1400px){
+
+  .eachimage{
+    height: 320px;
+    width: 320px;
+    margin: 61px;
+  }
+}
+
+@media screen and (max-width:1330px){
+
+  .eachimage{
+    height: 310px;
+    width: 310px;
+    margin: 57px;
+  }
+}
+
+
+@media screen and (max-width:1300px){
+
+  .eachimage{
+    height: 300px;
+    width: 300px;
+    margin: 54px;
+  }
+
+  html,body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .booknow{
+    left:43%;
+  }
+
+
+}
+
+@media screen and (max-width:1230px){
+
+  .eachimage{
+    height: 280px;
+    width: 280px;
+    margin: 57px;
+
+  }
+
+}
+
+@media screen and (max-width:1190px){
+
+  .eachimage{
+    height: 270px;
+    width: 270px;
+    margin: 53px;
+
+  }
+
+}
+
+@media screen and (max-width:1180px){
+
+  .eachimage{
+
+    height: 320px;
+    width: 320px;
+    margin: 30px;
+
+
+  }
+
+  .booknow{
+    left: 42%;
+  }
+
+}
+
+
+@media screen and (max-width:1147px){
+
+  .eachimage{
+    height: 270px;
+    width: 270px;
+    margin: 45px;
+
+  }
+
+  .booknow{
+    left:42%;
+  }
+
+}
+
+@media screen and (max-width:1145px){
+
+  .eachimage{
+    height: 280px;
+    width: 280px;
+    margin: 47px;
+
+  }
+
+}
+
+@media screen and (max-width:1130px){
+
+  .eachimage{
+    height: 270px;
+    width: 270px;
+    margin: 45px;
+
+  }
+
+}
+
+@media screen and (max-width:1090px){
+
+  .eachimage{
+    height: 260px;
+    width: 260px;
+    margin: 42px;
+
+  }
+
+}
+
+
+@media screen and (max-width:1040px){
+
+  .eachimage{
+    height: 245px;
+    width: 245px;
+    margin: 42px;
+
+  }
+
+  .booknow{
+    left: 42%;
+  }
+}
+
+@media screen and (max-width:995px){
+
+  .eachimage{
+    height: 240px;
+    width: 240px;
+    margin: 39px;
+
+  }
+
+}
+
+@media screen and (max-width:959px){
+
+  .eachimage{
+    height: 230px;
+    width: 230px;
+    margin: 39px;
+
+  }
+
+}
+
+@media screen and (max-width:930px){
+
+  .eachimage{
+    height: 227px;
+    width: 227px;
+    margin: 38px;
+
+  }
+
+}
+
+@media screen and (max-width:919px){
+
+  .eachimage{
+    height: 220px;
+    width: 220px;
+    margin: 35px;
+
+  }
+
+  .booknow{
+    left:39%;
+  }
+
+}
+
+@media screen and (max-width:876px){
+
+  .eachimage{
+    height: 218px;
+    width: 218px;
+    margin: 32px;
+
+  }
+}
+
+@media screen and (max-width:853px){
+
+  .eachimage{
+    height: 210px;
+    width: 210px;
+    margin: 30px;
+
+  }
+}
+
+@media screen and (max-width:818px){
+
+  .eachimage{
+    height: 200px;
+    width: 200px;
+    margin: 34px;
+
+  }
+}
+
+
+
+@media screen and (max-width: 810px){
+
+  .eachimage{
+    height: 196px;
+    width: 196px;
+    margin: 33px;
+
+  }
+
+  .Profile{
+     width: 60%  !important;
+  }
+
+  .logo{
+
+    letter-spacing: 5px;
+    font-size: 14px;
+  }
+
+  .nav-links{
+
+    width: 30%;
+
+  }
+
+  .booknow {
+
+    left: 39%;
+
+
+  }
+
+}
+
+@media screen and (max-width: 794px){
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 34px;
+
+  }
+
+  .booknow {
+    left: 38%;
+  }
+}
+
+@media screen and (max-width: 780px){
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 32px;
+
+  }
+
+}
+
+@media screen and (max-width: 770px){
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 30px;
+
+  }
+
+}
+
+@media screen and (max-width: 760px){
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 28px;
+
+  }
+
+}
+
+@media screen and (max-width: 745px){
+
+  .Profile{
+     width: 60%  !important;
+  }
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 26px;
+  }
+
+}
+
+@media screen and (max-width: 733px){
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 25px;
+  }
+
+  .Profile{
+     width: 65%  !important;
+  }
+
+}
+
+@media screen and (max-width: 727px){
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 23px;
+  }
+
+}
+
+@media screen and (max-width: 715px){
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 21px;
+  }
+
+  .introduction{
+    letter-spacing: 4px;
+    font-size: 23px;
+  }
+
+
+}
+
+@media screen and (max-width: 703px){
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 19px;
+  }
+
+  .intro{
+    padding: 100px;
+  }
+
+  .introduction{
+    display: none;
+  }
+  .alternateintro{
+    display: block;
+    font-size: 27px;
+  }
+
+
+}
+
+@media screen and (max-width: 694px){
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 17px;
+  }
+}
+
+@media screen and (max-width: 677px){
+
+  .eachimage{
+    height: 190px;
+    width: 190px;
+    margin: 15px;
+  }
+
+  .booknow {
+    left: 36%;
+  }
+}
+
+@media screen and (max-width: 667px){
+
+  .eachimage{
+    height: 180px;
+    width: 180px;
+    margin: 19px;
+  }
+
+}
+
+@media screen and (max-width: 660px){
+
+  .eachimage{
+    height: 180px;
+    width: 180px;
+    margin: 17px;
+  }
+
+}
+
+@media screen and (max-width: 650px){
+
+  .eachimage{
+    height: 180px;
+    width: 180px;
+    margin: 15px;
+  }
+
+}
+
+@media screen and (max-width: 640px){
+
+  .eachimage{
+    height: 180px;
+    width: 180px;
+    margin: 13px;
+  }
+
+}
+
+@media screen and (max-width: 625px){
+
+  .eachimage{
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+  }
+
+}
+
+@media screen and (max-width: 607px){
+
+  .eachimage{
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+  }
+
+  .booknow {
+    left: 34%;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  .Profile{
+     width: 75%  ;
+  }
+
+  .whatsappicons{
+    height: 40px;
+    width: 40px;
+  }
+
+  .booknow {
+    left: 33%;
+    z-index: 0;
+  }
+}
+
+
+@media screen and (max-width: 590px){
+
+  .Profile{
+     width: 75% ;
+  }
+
+  .whatsappicons{
+    height: 40px;
+    width: 40px;
+  }
+
+  .booknow {
+    left: 33%;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 575px){
+
+  .eachimage{
+    height: 160px;
+    width: 160px;
+    margin: 12px;
+  }
+
+}
+
+@media screen and (max-width: 560px){
+
+  .eachimage{
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+  }
+
+}
+
+@media screen and (max-width: 548px){
+
+  .eachimage{
+    height: 150px;
+    width: 150px;
+    margin: 14px;
+  }
+
+}
+
+@media screen and (max-width: 541px){
+
+  .eachimage{
+    height: 150px;
+    width: 150px;
+    margin: 13px;
+  }
+}
+
+@media screen and (max-width: 535px){
+
+  .eachimage{
+    height: 150px;
+    width: 150px;
+    margin: 12px;
+  }
+}
+
+@media screen and (max-width: 530px){
+
+  .eachimage{
+    height: 149px;
+    width: 149px;
+    margin: 11px;
+  }
+}
+
+@media screen and (max-width: 520px){
+
+  .eachimage{
+    height: 149px;
+    width: 149px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 515px){
+
+  .eachimage{
+    height: 148px;
+    width: 148px;
+    margin: 10px;
+  }
+
+  nav .logo h1{
+    padding: 20px;
+  }
+
+  .alternateintro{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 512px){
+
+  .eachimage{
+    height: 148px;
+    width: 148px;
+    margin: 9px;
+  }
+}
+
+@media screen and (max-width: 506px){
+
+  .eachimage{
+    height: 144px;
+    width: 144px;
+    margin: 10px;
+  }
+
+  nav .logo h1{
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px){
+
+  .eachimage{
+    height: 142px;
+    width: 142px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 494px){
+
+  .eachimage{
+    height: 142px;
+    width: 142px;
+    margin: 9px;
+  }
+}
+
+@media screen and (max-width: 488px){
+
+  .eachimage{
+    height: 140px;
+    width: 140px;
+    margin: 9px;
+  }
+}
+
+@media screen and (max-width: 482px){
+
+  .eachimage{
+    height: 138px;
+    width: 138px;
+    margin: 9px;
+  }
+}
+
+@media screen and (max-width: 476px){
+
+  .eachimage{
+    height: 137px;
+    width: 137px;
+    margin: 9px;
+  }
+}
+
+@media screen and (max-width: 473px){
+
+  .eachimage{
+    height: 136px;
+    width: 136px;
+    margin: 9px;
+  }
+}
+
+@media screen and (max-width: 470px){
+
+  .eachimage{
+    height: 136px;
+    width: 136px;
+    margin: 8px;
+  }
+
+  .Profile{
+    width: 70%   !important;
+  }
+
+  .booknow{
+    left:30%;
+  }
+}
+
+@media screen and (max-width: 464px){
+
+  .eachimage{
+    height: 134px;
+    width: 134px;
+    margin: 8px;
+  }
+
+}
+
+
+@media screen and (max-width: 449px){
+
+  .eachimage{
+    height: 131px;
+    width: 131px;
+    margin: 7px;
+  }
+
+}
+
+@media screen and (max-width: 443px){
+
+  .eachimage{
+    height: 130px;
+    width: 130px;
+    margin: 7px;
+  }
+
+}
+
+@media screen and (max-width: 440px){
+
+  .eachimage{
+    height: 128px;
+    width: 128px;
+    margin: 7px;
+  }
+
+}
+
+@media screen and (max-width: 434px){
+
+  .eachimage{
+    height: 127px;
+    width: 127px;
+    margin: 7px;
+  }
+
+  .whatsappicons{
+    width: 25px;
+    height: 25px;
+  }
+
+  .alternateintro{
+    font-size: 20px;
+  }
+
+  .intro{
+    padding: 65px;
+  }
+
+  .phonenospan{
+    font-size: 13px;
+  }
+
+  .emailspan{
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (max-width: 431px){
+
+  .eachimage{
+    height: 125px;
+    width: 125px;
+    margin: 7px;
+  }
+}
+
+@media screen and (max-width: 421px){
+
+  .eachimage{
+    height: 120px;
+    width: 120px;
+    margin: 7px;
+  }
+
+  .alternateintro{
+    font-size: 19px;
+  }
+
+  .intro{
+    padding: 70px;
+  }
+
+  nav .logo h1{
+    padding: 15px;
+  }
+
+  .Profile{
+     width: 80%  !important;
+  }
+
+  .whatsappicons{
+    height: 35px;
+    width: 35px;
+  }
+
+  .booknow {
+
+    left: 27%;
+    z-index: 0;
+
+  }
+}
+
+@media screen and (max-width: 410px){
+
+  .eachimage{
+    height: 118px;
+    width: 118px;
+    margin: 7px;
+  }
+}
+
+@media screen and (max-width: 404px){
+
+  .eachimage{
+    height: 118px;
+    width: 118px;
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 398px){
+
+  .eachimage{
+    height: 117px;
+    width: 117px;
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 395px){
+
+  .eachimage{
+    height: 116px;
+    width: 116px;
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 392px){
+
+  .eachimage{
+    height: 115px;
+    width: 115px;
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 389px){
+
+  .eachimage{
+    height: 114px;
+    width: 114px;
+    margin: 6px;
+  }
+
+  nav .logo h1{
+    padding: 13px;
+  }
+}
+
+@media screen and (max-width: 386px){
+
+  .eachimage{
+    height: 110px;
+    width: 110px;
+    margin: 7px;
+  }
+}
+
+@media screen and (max-width: 380px){
+
+  .eachimage{
+    height: 110px;
+    width: 110px;
+    margin: 6px;
+  }
+
+  nav .logo h1{
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 376px){
+
+  nav .logo h1{
+    padding: 1px;
+  }
+
+}
+
+@media screen and (max-width: 374px){
+
+  .eachimage{
+    height: 109px;
+    width: 109px;
+    margin: 6px;
+  }
+
+  nav .logo h1{
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 371px){
+
+  .eachimage{
+    height: 106px;
+    width: 106px;
+    margin: 6px;
+  }
+
+  .intro{
+    padding: 65px;
+  }
+}
+
+@media screen and (max-width: 361px){
+
+  .eachimage{
+    height: 103px;
+    width: 103px;
+    margin: 6px;
+  }
+
+  nav .logo h1{
+    padding: 0px;
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 353px){
+
+  .eachimage{
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+  }
+
+  nav .logo h1{
+    padding: 0;
+    font-size: 17px;
+  }
+
+  .Profile{
+    width:95%  !important;
+  }
+
+  .booknow{
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 344px){
+
+  .eachimage{
+    height: 100px;
+    width: 100px;
+    margin: 3px;
+  }
+}
+
+@media screen and (max-width: 326px){
+
+  .eachimage{
+    height: 130px;
+    width: 130px;
+    margin: 13px;
+  }
+}
+
+@media screen and (max-width: 304px){
+
+  .eachimage{
+    height: 120px;
+    width: 120px;
+    margin: 12px;
+  }
+
+  .button{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 292px){
+
+  .eachimage{
+    height: 120px;
+    width: 120px;
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 300px){
+
+
+  nav{
+    height: 10vh  !important;
+  }
+
+
+}
+
+@media screen and (max-width: 281px){
+
+  .eachimage{
+    height: 120px;
+    width: 120px;
+    margin: 9px;
+  }
+
+  .button{
+    font-size: 16px;
+  }
+
+  .whatsappicons{
+    width: 27px;
+    height: 27px;
+  }
+
+  .Profile{
+    width:100%  !important;
+  }
+
+  .alternateintro{
+    font-size: 15px;
+  }
+
+  .intro{
+    padding: 45px;
+  }
+
+  .lastimage{
+    display: none;
+  }
+
+}
+
+
+/******************NAVBAR MEDIA QUERIES**************************************************/
+
+@media screen and (max-width: 800px){
+
+         nav .mainMenu{
+           height:100vh;
+           position:fixed;
+           top:0;
+           right:0;
+           left:0;
+
+           z-index:10;
+           flex-direction:column    !important;
+           justify-content:center;
+           align-items:center;
+           background:#201818;
+           transition:top 1s ease;
+           display:none;
+
+         }
+
+
+        nav .mainMenu .closeMenu{
+          display: block;
+          position: absolute;
+          top:20px;
+          right:20px;
+
+        }
+
+        nav .openMenu{
+          display: block;
+        }
+
+        nav .mainMenu li a:hover{
+          background: none;
+          color:rgb(255,123,0);
+          font-size: 1.6rem;
+        }
+
+        .icons i{
+          display: inline-block;
+          padding: 12px;
+        }
+
+        .logo h1{
+          font-size: 22px;
+        }
+
+        body,html{
+          overflow-x: hidden;
+          width: 100%;
+          height: 100%;
+        }
+
+}
+
+/******************FOOTER MEDIA QUERIES**************************************************/
+
+@media screen and (max-width: 900px) {
+
+   footer{
+     position: relative;
+     bottom: 0px;
+   }
+
+   .main-content{
+     flex-wrap: wrap;
+     flex-direction: column;
+   }
+
+   .main-content .box{
+     margin: 5px 0;
+   }
+
+}
+
+/* *****************************IMAGE SLIDER MEDIA QUEERIES ********************************************************************** */
+
+@media screen and (max-width: 1000px) {
+
+  .slideshow-item-text{
+    max-width: 70%;
+    padding: 5rem 1rem;
+  }
+
+  .slideshow-item-text h5{
+    font-size: 4rem;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .slideshow-item-text{
+    max-width: 100%;
+    padding: 2rem;
+    top: initial;
+    bottom: 0;
+    transform: initial;
+  }
+
+  .slideshow-item-text h5{
+    font-size: 3rem;
+  }
+
+  .slideshow-item-text p{
+    font-size: 1.4rem;
+  }
+
+}
+
+/* *****************************COVID SAFETY PRECAUTIONS MEDIA QUERIES********************************************************************** */
+
+@media screen and (max-width: 991px) {
+
+  .precautions .card{
+    width:50%;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .precautions .card{
+    width:100%;
+  }
+
+}

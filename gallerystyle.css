@@ -1,0 +1,1006 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+.top{
+  background-color:#201818;
+
+  text-align:center;
+  line-height:85px
+  height: 85px;
+  width: 100%;
+  font-size: 45px;
+    color:#F7F0F0;
+}
+
+
+
+.gap{
+  height:5px;
+  width: 100%;
+}
+
+
+
+.imagesdiv{
+
+  /*background-image: url(images/galleryblur.jpg);*/
+  background-color: #201818;
+
+}
+
+
+
+.eachimage{
+  display: inline-block;
+  height: 450px;
+  width: 450px;
+  margin: 25px;
+  border-radius: 20%;
+
+}
+
+
+/**********************FOOTER STYLES*****************************************************************************/
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ footer{
+   font-family: 'Poppins', sans-serif;
+
+   bottom: 0px;
+   width: 100%;
+   background: #201818;
+   color: #e4e3e3;
+ }
+
+ .main-content{
+   display: flex;
+ }
+
+ .main-content .box{
+   flex-basis: 50%;
+   padding: 10px 20px;
+ }
+
+ .box h2{
+   font-size: 1.125rem;
+   font-weight: 600;
+   text-transform: uppercase;
+ }
+
+ .box .footercontent{
+   margin: 20px 0 0 0;
+   position: relative;
+ }
+
+ .box .footercontent::before{
+   position: absolute;
+   content: '';
+   top: -10px;
+   height: 2px;
+   width: 100%;
+   background: #1a1a1a;
+ }
+
+ .box .footercontent::after{
+   position: absolute;
+   content: '';
+   height: 2px;
+   width: 15%;
+   background:#f12020;
+   top:-10px;
+ }
+
+ .left .footercontent p{
+   text-align: justify;
+ }
+
+ .left .footercontent .social{
+   margin: 20px 0 0 0;
+ }
+
+ .left .footercontent .social a{
+   padding: 0 2px;
+ }
+
+ .left .footercontent .social a span{
+   height: 40px;
+   width: 40px;
+   background: #1a1a1a;
+   line-height: 40px;
+   text-align: center;
+   font-size: 18px;
+   border-radius: 5px;
+   transition: 0.3s;
+ }
+
+.left .footercontent .social a span:hover{
+  background: #f12020;
+}
+
+.center .footercontent .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center .footercontent .fas:hover{
+  background: #f12020;
+}
+
+.center .footercontent .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.center .footercontent .phone{
+  margin: 10px 0;
+}
+
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+
+.right form .msg{
+  margin-top: 10px;
+}
+
+.right form input,.right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+
+.right form input{
+  height: 35px;
+}
+
+.right form .btn{
+  margin-top: 10px;
+}
+
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.right form .btn button:hover{
+  background: #201818;
+}
+
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+
+.bottom center span{
+  color:#656565;
+}
+
+.bottom center a{
+  color:#f12020;
+  text-decoration: none;
+}
+
+.bottom center a:hover{
+  text-decoration: underline;
+}
+
+
+/*********************** MEDIA QUERIES ***********************************************************************/
+
+@media screen and (max-width:1400px){
+
+  .eachimage{
+    height: 320px;
+    width: 320px;
+    margin: 61px;
+  }
+
+}
+
+@media screen and (max-width:1330px){
+
+  .eachimage{
+    height: 310px;
+    width: 310px;
+    margin: 57px;
+  }
+
+}
+
+@media screen and (max-width:1300px){
+
+  .eachimage{
+    height: 300px;
+    width: 300px;
+    margin: 54px;
+  }
+
+}
+
+@media screen and (max-width:1230px){
+
+  .eachimage{
+    height: 280px;
+    width: 280px;
+    margin: 57px;
+
+  }
+
+}
+
+@media screen and (max-width:1190px){
+
+  .eachimage{
+    height: 270px;
+    width: 270px;
+    margin: 53px;
+
+  }
+
+}
+
+@media screen and (max-width:1180px){
+
+  .eachimage{
+
+    height: 320px;
+    width: 320px;
+    margin: 30px;
+
+
+  }
+
+  @media screen and (max-width:1147px){
+
+    .eachimage{
+      height: 270px;
+      width: 270px;
+      margin: 45px;
+
+    }
+
+    .booknow{
+      left:42%;
+    }
+
+  }
+
+
+@media screen and (max-width:1145px){
+
+  .eachimage{
+    height: 280px;
+    width: 280px;
+    margin: 47px;
+
+  }
+
+}
+
+@media screen and (max-width:1130px){
+
+  .eachimage{
+    height: 270px;
+    width: 270px;
+    margin: 45px;
+
+  }
+
+}
+
+@media screen and (max-width:1090px){
+
+  .eachimage{
+    height: 260px;
+    width: 260px;
+    margin: 42px;
+
+  }
+
+}
+
+@media screen and (max-width:1040px){
+
+  .eachimage{
+    height: 245px;
+    width: 245px;
+    margin: 42px;
+  }
+
+}
+
+@media screen and (max-width:995px){
+
+  .eachimage{
+    height: 240px;
+    width: 240px;
+    margin: 39px;
+
+  }
+
+}
+
+@media screen and (max-width:959px){
+
+  .eachimage{
+    height: 230px;
+    width: 230px;
+    margin: 39px;
+
+  }
+
+}
+
+@media screen and (max-width:930px){
+
+  .eachimage{
+    height: 227px;
+    width: 227px;
+    margin: 38px;
+
+  }
+
+}
+
+@media screen and (max-width:919px){
+
+  .eachimage{
+    height: 220px;
+    width: 220px;
+    margin: 35px;
+
+  }
+
+}
+
+@media screen and (max-width:876px){
+
+  .eachimage{
+    height: 218px;
+    width: 218px;
+    margin: 32px;
+
+  }
+}
+
+@media screen and (max-width:853px){
+
+  .eachimage{
+    height: 210px;
+    width: 210px;
+    margin: 30px;
+
+  }
+}
+
+@media screen and (max-width:818px){
+
+  .eachimage{
+    height: 200px;
+    width: 200px;
+    margin: 34px;
+
+  }
+}
+
+@media screen and (max-width: 810px){
+
+  .eachimage{
+    height: 196px;
+    width: 196px;
+    margin: 33px;
+
+  }
+
+  @media screen and (max-width: 794px){
+
+    .eachimage{
+      height: 190px;
+      width: 190px;
+      margin: 34px;
+
+    }
+  }
+
+  @media screen and (max-width: 780px){
+
+    .eachimage{
+      height: 190px;
+      width: 190px;
+      margin: 32px;
+
+    }
+
+    @media screen and (max-width: 770px){
+
+      .eachimage{
+        height: 190px;
+        width: 190px;
+        margin: 30px;
+
+      }
+
+    }
+
+    @media screen and (max-width: 760px){
+
+      .eachimage{
+        height: 190px;
+        width: 190px;
+        margin: 28px;
+
+      }
+
+    }
+
+    @media screen and (max-width: 745px){
+
+      .eachimage{
+        height: 190px;
+        width: 190px;
+        margin: 26px;
+      }
+
+    }
+
+    @media screen and (max-width: 733px){
+
+      .eachimage{
+        height: 190px;
+        width: 190px;
+        margin: 25px;
+      }
+
+    }
+
+    @media screen and (max-width: 715px){
+
+      .eachimage{
+        height: 190px;
+        width: 190px;
+        margin: 21px;
+      }
+
+    }
+
+    @media screen and (max-width: 703px){
+
+      .eachimage{
+        height: 190px;
+        width: 190px;
+        margin: 19px;
+      }
+    }
+
+    @media screen and (max-width: 694px){
+
+      .eachimage{
+        height: 190px;
+        width: 190px;
+        margin: 17px;
+      }
+    }
+
+    @media screen and (max-width: 677px){
+
+      .eachimage{
+        height: 190px;
+        width: 190px;
+        margin: 15px;
+      }
+
+    }
+
+    @media screen and (max-width: 667px){
+
+      .eachimage{
+        height: 180px;
+        width: 180px;
+        margin: 19px;
+      }
+
+    }
+
+    @media screen and (max-width: 660px){
+
+      .eachimage{
+        height: 180px;
+        width: 180px;
+        margin: 17px;
+      }
+
+    }
+
+    @media screen and (max-width: 650px){
+
+      .eachimage{
+        height: 180px;
+        width: 180px;
+        margin: 15px;
+      }
+
+    }
+
+    @media screen and (max-width: 640px){
+
+      .eachimage{
+        height: 180px;
+        width: 180px;
+        margin: 13px;
+      }
+
+    }
+
+    @media screen and (max-width: 625px){
+
+      .eachimage{
+        height: 180px;
+        width: 180px;
+        margin: 10px;
+      }
+
+    }
+
+    @media screen and (max-width: 607px){
+
+      .eachimage{
+        height: 170px;
+        width: 170px;
+        margin: 10px;
+      }
+}
+
+@media screen and (max-width: 575px){
+
+  .eachimage{
+    height: 160px;
+    width: 160px;
+    margin: 12px;
+  }
+
+}
+
+@media screen and (max-width: 560px){
+
+  .eachimage{
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+  }
+
+}
+
+@media screen and (max-width: 548px){
+
+  .eachimage{
+    height: 150px;
+    width: 150px;
+    margin: 14px;
+  }
+}
+
+@media screen and (max-width: 541px){
+
+  .eachimage{
+    height: 150px;
+    width: 150px;
+    margin: 13px;
+  }
+
+  @media screen and (max-width: 535px){
+
+    .eachimage{
+      height: 150px;
+      width: 150px;
+      margin: 12px;
+    }
+  }
+
+  @media screen and (max-width: 530px){
+
+    .eachimage{
+      height: 149px;
+      width: 149px;
+      margin: 11px;
+    }
+  }
+
+  @media screen and (max-width: 520px){
+
+    .eachimage{
+      height: 149px;
+      width: 149px;
+      margin: 10px;
+    }
+  }
+
+  @media screen and (max-width: 515px){
+
+    .eachimage{
+      height: 148px;
+      width: 148px;
+      margin: 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 506px){
+
+    .eachimage{
+      height: 144px;
+      width: 144px;
+      margin: 10px;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+
+    .eachimage{
+      height: 142px;
+      width: 142px;
+      margin: 10px;
+    }
+  }
+
+  @media screen and (max-width: 494px){
+
+    .eachimage{
+      height: 142px;
+      width: 142px;
+      margin: 9px;
+    }
+  }
+
+  @media screen and (max-width: 494px){
+
+    .eachimage{
+      height: 142px;
+      width: 142px;
+      margin: 9px;
+    }
+  }
+
+  @media screen and (max-width: 488px){
+
+    .eachimage{
+      height: 140px;
+      width: 140px;
+      margin: 9px;
+    }
+  }
+
+  @media screen and (max-width: 482px){
+
+    .eachimage{
+      height: 138px;
+      width: 138px;
+      margin: 9px;
+    }
+  }
+
+  @media screen and (max-width: 476px){
+
+    .eachimage{
+      height: 137px;
+      width: 137px;
+      margin: 9px;
+    }
+  }
+
+  @media screen and (max-width: 473px){
+
+    .eachimage{
+      height: 136px;
+      width: 136px;
+      margin: 9px;
+    }
+  }
+
+  @media screen and (max-width: 470px){
+
+    .eachimage{
+      height: 136px;
+      width: 136px;
+      margin: 8px;
+    }
+  }
+
+  @media screen and (max-width: 464px){
+
+    .eachimage{
+      height: 134px;
+      width: 134px;
+      margin: 8px;
+    }
+
+  }
+
+  @media screen and (max-width: 458px){
+
+    .eachimage{
+      height: 133px;
+      width: 133px;
+      margin: 7px;
+    }
+
+  }
+
+  @media screen and (max-width: 449px){
+
+    .eachimage{
+      height: 131px;
+      width: 131px;
+      margin: 7px;
+    }
+
+  }
+
+  @media screen and (max-width: 443px){
+
+    .eachimage{
+      height: 130px;
+      width: 130px;
+      margin: 7px;
+    }
+
+  }
+
+  @media screen and (max-width: 440px){
+
+    .eachimage{
+      height: 128px;
+      width: 128px;
+      margin: 7px;
+    }
+
+  }
+
+  @media screen and (max-width: 434px){
+
+    .eachimage{
+      height: 127px;
+      width: 127px;
+      margin: 7px;
+    }
+  }
+
+  @media screen and (max-width: 431px){
+
+    .eachimage{
+      height: 125px;
+      width: 125px;
+      margin: 7px;
+    }
+  }
+
+  @media screen and (max-width: 421px){
+
+    .eachimage{
+      height: 120px;
+      width: 120px;
+      margin: 7px;
+    }
+  }
+
+  @media screen and (max-width: 410px){
+
+    .eachimage{
+      height: 118px;
+      width: 118px;
+      margin: 7px;
+    }
+  }
+
+  @media screen and (max-width: 404px){
+
+    .eachimage{
+      height: 118px;
+      width: 118px;
+      margin: 6px;
+    }
+  }
+
+  @media screen and (max-width: 398px){
+
+    .eachimage{
+      height: 117px;
+      width: 117px;
+      margin: 6px;
+    }
+  }
+
+  @media screen and (max-width: 395px){
+
+    .eachimage{
+      height: 116px;
+      width: 116px;
+      margin: 6px;
+    }
+  }
+
+  @media screen and (max-width: 392px){
+
+    .eachimage{
+      height: 115px;
+      width: 115px;
+      margin: 6px;
+    }
+  }
+
+  @media screen and (max-width: 389px){
+
+    .eachimage{
+      height: 114px;
+      width: 114px;
+      margin: 6px;
+    }
+  }
+
+  @media screen and (max-width: 386px){
+
+    .eachimage{
+      height: 110px;
+      width: 110px;
+      margin: 7px;
+    }
+  }
+
+  @media screen and (max-width: 380px){
+
+    .eachimage{
+      height: 110px;
+      width: 110px;
+      margin: 6px;
+    }
+}
+
+@media screen and (max-width: 374px){
+
+  .eachimage{
+    height: 109px;
+    width: 109px;
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 371px){
+
+  .eachimage{
+    height: 103px;
+    width: 103px;
+    margin: 6px;
+  }
+}
+@media screen and (max-width: 361px){
+
+  .eachimage{
+    height: 103px;
+    width: 103px;
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 353px){
+
+  .eachimage{
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 344px){
+
+  .eachimage{
+    height: 100px;
+    width: 100px;
+    margin: 3px;
+  }
+}
+
+@media screen and (max-width: 326px){
+
+  .eachimage{
+    height: 130px;
+    width: 130px;
+    margin: 13px;
+  }
+}
+
+@media screen and (max-width: 316px){
+
+  .eachimage{
+    height: 120px;
+    width: 120px;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 304px){
+
+  .eachimage{
+    height: 120px;
+    width: 120px;
+    margin: 12px;
+  }
+}
+
+@media screen and (max-width: 292px){
+
+  .eachimage{
+    height: 120px;
+    width: 120px;
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 281px){
+
+  .eachimage{
+    height: 120px;
+    width: 120px;
+    margin: 9px;
+  }
+
+}
+
+/******************FOOTER MEDIA QUERIES**************************************************/
+
+@media screen and (max-width: 900px) {
+
+   footer{
+     position: relative;
+     bottom: 0px;
+   }
+
+   .main-content{
+     flex-wrap: wrap;
+     flex-direction: column !important;
+   }
+
+   .main-content .box{
+     margin: 5px 0;
+   }
+
+}
