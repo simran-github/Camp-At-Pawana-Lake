@@ -302,6 +302,7 @@ nav{
   font-family: 'Playfair Display SC', serif;
   height: 9vh;
   width:100%  !important;
+
 }
 
 .mainlogo{
@@ -1337,12 +1338,16 @@ a{
   }
 }
 
-@media screen and (max-width: 535px){
+@media screen and (max-width: 537px){
 
   .eachimage{
     height: 150px;
     width: 150px;
     margin: 12px;
+  }
+
+  nav .logo h1{
+    padding: 20px;
   }
 }
 
@@ -1353,18 +1358,26 @@ a{
     width: 149px;
     margin: 11px;
   }
+
+  nav .logo h1{
+    padding: 16px;
+  }
 }
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 521px){
 
   .eachimage{
     height: 149px;
     width: 149px;
     margin: 10px;
   }
+
+  nav .logo h1{
+    padding: 10px;
+  }
 }
 
-@media screen and (max-width: 515px){
+@media screen and (max-width: 516px){
 
   .eachimage{
     height: 148px;
@@ -1379,6 +1392,10 @@ a{
   .alternateintro{
     font-size: 22px;
   }
+
+  nav .logo h1{
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 512px){
@@ -1387,6 +1404,10 @@ a{
     height: 148px;
     width: 148px;
     margin: 9px;
+  }
+
+  nav .logo h1{
+    padding: 5px;
   }
 }
 
@@ -1399,7 +1420,7 @@ a{
   }
 
   nav .logo h1{
-    padding: 10px;
+    padding: 3px;
   }
 }
 
@@ -1572,7 +1593,7 @@ a{
   }
 
   nav .logo h1{
-    padding: 15px;
+    padding: 0px;
   }
 
   .Profile{
@@ -1645,9 +1666,7 @@ a{
     margin: 6px;
   }
 
-  nav .logo h1{
-    padding: 13px;
-  }
+
 }
 
 @media screen and (max-width: 386px){
@@ -1667,16 +1686,11 @@ a{
     margin: 6px;
   }
 
-  nav .logo h1{
-    padding: 8px;
-  }
 }
 
 @media screen and (max-width: 376px){
 
-  nav .logo h1{
-    padding: 1px;
-  }
+
 
 }
 
@@ -1826,6 +1840,13 @@ a{
     display: none;
   }
 
+}
+
+@media screen and (max-width: 281px){
+
+  nav .logo h1{
+    font-size: 14px;
+  }
 }
 
 
